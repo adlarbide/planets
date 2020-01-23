@@ -4,10 +4,14 @@ git config --global user.name "username"
 git config --global user.email "email"
 git config --global core.autocrlf input
 git config --global core.editor "vim"
+git config --global difftool.prompt meld
 git config --list
 
 git remote add origin url
 git remote --v
 git remote rename/remove
 
-git pull origin master
+git pull/push origin master
+
+git diff (--staged)
+git difftool (--staged) filename
